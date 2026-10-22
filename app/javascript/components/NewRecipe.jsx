@@ -31,7 +31,7 @@ const NewRecipe = () => {
       instruction: stripHtmlEntities(instruction),
     }
 
-    const token = document.querySelector('meta[name:"csrf-token"]').textContent
+    const token = document.querySelector('meta[name="csrf-token"]').content
     fetch(url, {
       method: "POST",
       headers: {
